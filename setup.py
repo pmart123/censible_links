@@ -11,4 +11,5 @@ setup(name='censible_links',
       author='Philip Martin',
       author_email='philip.martin@censible.co',
       install_requires=list(open('requirements.txt').read().strip().split('\r\n')),
+      entry_points={'scrapy': ['settings = censible_links.settings']},
       zip_safe=False)
